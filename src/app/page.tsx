@@ -93,7 +93,9 @@ export default function Home() {
       {/* Header & Navigation */}
       <header className="fixed top-0 w-full bg-gray-900/80 backdrop-blur-sm z-50">
         <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <h1 className="text-xl font-bold">Wai Si Hnyun</h1>
+          <h1 className="text-xl font-bold cursor-pointer" onClick={() => scrollToSection('home')}>
+            Wai Si Hnyun
+          </h1>
           <div className="hidden md:flex items-center gap-6">
             {['about', 'projects', 'skills', 'contact'].map((item) => (
               <button
@@ -459,4 +461,4 @@ export default function Home() {
       </footer>
     </div>
   )
-} 
+}
