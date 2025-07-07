@@ -148,11 +148,6 @@ export default function Home() {
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="outline" size="icon" asChild>
-                <a href="/files/resume.pdf" download="Wai_Si_Hnyun_Resume.pdf">
-                  <Download className="h-5 w-5" />
-                </a>
-              </Button>
             </div>
             <div className="pt-4 flex gap-4">
               <Button
@@ -166,7 +161,10 @@ export default function Home() {
                 className="text-lg px-8 py-6"
                 asChild
               >
-                <a href="/files/resume.pdf" download="Wai_Si_Hnyun_Resume.pdf">
+                {/* <a href="/files/resume.pdf" download="Wai_Si_Hnyun_Resume.pdf">
+                  Download Resume
+                </a> */}
+                <a href="#">
                   Download Resume
                 </a>
               </Button>
@@ -176,7 +174,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="min-h-screen flex items-center justify-center py-20 bg-gray-900/50 px-6">
+      <section id="about" className="py-20 bg-gray-900/50 px-6">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold mb-12">About Me</h2>
           <div className="flex flex-col md:flex-row gap-12 items-center">
