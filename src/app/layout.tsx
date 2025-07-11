@@ -1,9 +1,20 @@
 import * as React from 'react'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Playfair_Display, Crimson_Text } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const playfairDisplay = Playfair_Display({ 
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
+
+const crimsonText = Crimson_Text({ 
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  variable: '--font-crimson',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Professional Portfolio',
@@ -17,7 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={inter.className}>{children}</body>
+      <body className={`${playfairDisplay.variable} ${crimsonText.variable} font-body`}>
+        {children}
+      </body>
     </html>
   )
 } 
