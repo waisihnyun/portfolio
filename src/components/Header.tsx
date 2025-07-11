@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
-import { NAVIGATION_ITEMS, PERSONAL_INFO } from '@/data/portfolio'
+import { NAVIGATION_ITEMS, NAVIGATION_LABELS, PERSONAL_INFO } from '@/data/portfolio'
 import { scrollToSection } from '@/utils/navigation'
 import { Download, Menu, X } from 'lucide-react'
 
@@ -31,16 +31,16 @@ export default function Header({ activeSection }: HeaderProps) {
         >
           {PERSONAL_INFO.name}
         </h1>
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-4 lg:gap-6">
           {NAVIGATION_ITEMS.map((item) => (
             <button
               key={item}
               onClick={() => scrollToSection(item)}
-              className={`font-body capitalize transition-colors ${
-                activeSection === item ? 'text-blue-400' : 'hover:text-blue-400'
+              className={`font-body text-sm lg:text-base transition-colors px-2 py-1 rounded ${
+                activeSection === item ? 'text-blue-400 bg-blue-500/10' : 'hover:text-blue-400 hover:bg-blue-500/5'
               }`}
             >
-              {item}
+              {NAVIGATION_LABELS[item]}
             </button>
           ))}
           <Button
@@ -87,11 +87,11 @@ export default function Header({ activeSection }: HeaderProps) {
                 <button
                   key={item}
                   onClick={() => handleMobileNavClick(item)}
-                  className={`font-body capitalize transition-colors ${
-                    activeSection === item ? 'text-blue-400' : 'hover:text-blue-400'
+                  className={`font-body transition-colors px-4 py-2 rounded ${
+                    activeSection === item ? 'text-blue-400 bg-blue-500/10' : 'hover:text-blue-400 hover:bg-blue-500/5'
                   }`}
                 >
-                  {item}
+                  {NAVIGATION_LABELS[item]}
                 </button>
               ))}
               <Button 

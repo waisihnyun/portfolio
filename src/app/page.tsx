@@ -4,6 +4,8 @@ import {
   Header,
   HeroSection,
   AboutSection,
+  ExperienceSection,
+  CertificationsSection,
   ProjectsSection,
   SkillsSection,
   ContactSection,
@@ -19,6 +21,8 @@ export default function Home() {
       <Header activeSection={activeSection} />
       <HeroSection />
       <AboutSection />
+      <ExperienceSection />
+      <CertificationsSection />
       <ProjectsSection />
       <SkillsSection />
       <ContactSection />

@@ -26,3 +26,23 @@ export interface SocialLink {
   icon: React.ReactNode
   label: string
 }
+
+export interface Experience {
+  company: string
+  position: string
+  duration: string
+  location: string
+  description: string
+  achievements: string[]
+  tech: string[]
+}
+
+export interface Certification {
+  name: string
+  issuer: string
+  date: string
+  credentialId?: string
+  link?: string
+}
+
+export type NavigationItem = 'about' | 'experience' | 'certs' | 'projects' | 'skills' | 'contact'

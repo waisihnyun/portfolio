@@ -3,7 +3,7 @@ import {
   Github,
   Linkedin,
 } from 'lucide-react'
-import { Project, SocialLink } from '@/types'
+import { Project, SocialLink, Experience, Certification } from '@/types'
 
 export const PROJECTS: Project[] = [
   {
@@ -99,7 +99,16 @@ export const SOCIAL_LINKS: SocialLink[] = [
   }
 ]
 
-export const NAVIGATION_ITEMS = ['about', 'projects', 'skills', 'contact'] as const
+export const NAVIGATION_ITEMS = ['about', 'experience', 'certs', 'projects', 'skills', 'contact'] as const
+
+export const NAVIGATION_LABELS = {
+  about: 'About',
+  experience: 'Experience', 
+  certs: 'Certs',
+  projects: 'Projects',
+  skills: 'Skills',
+  contact: 'Contact'
+} as const
 
 export const PERSONAL_INFO = {
   name: 'Wai Si Hnyun',
@@ -111,3 +120,42 @@ export const PERSONAL_INFO = {
     'Currently exploring AI-driven development and vibe coding to accelerate development processes and create innovative solutions in the evolving tech landscape.'
   ]
 } as const
+
+export const EXPERIENCE: Experience[] = [
+  {
+    company: 'Metateam Myanmar',
+    position: 'Software Engineer',
+    duration: '2023 - Present',
+    location: 'Yangon',
+    description: 'Offshore development specialist working with Japanese clients to deliver scalable backend systems and cloud-native applications.',
+    achievements: [
+      'Developed microservices architecture for Japanese data marketing platform',
+      'Built e-commerce solutions with secure data handling and user management',
+      'Enhanced system performance and scalability'
+    ],
+    tech: ['Java', 'Spring Boot', 'PHP', 'Laravel', 'Vue.js', 'AWS', 'MySQL', 'PostgreSQL', 'AWS']
+  },
+  {
+    company: 'Personal Projects & Learning',
+    position: 'Full-Stack Developer',
+    duration: '2022 - 2023',
+    location: 'Self-Directed',
+    description: 'Focused on learning modern web technologies and building practical applications.',
+    achievements: [
+      'Mastered Spring Boot and Laravel frameworks',
+      'Gained expertise in database design and optimization',
+      'Built multiple full-stack applications'
+    ],
+    tech: ['JavaScript', 'TypeScript', 'PHP', 'Laravel', 'Java', 'Spring Boot', 'Git', 'MySQL']
+  }
+]
+
+export const CERTIFICATIONS: Certification[] = [
+  {
+    name: 'AWS Certified Solutions Architect - Associate',
+    issuer: 'Amazon Web Services',
+    date: '2025',
+    credentialId: 'SAA-C03',
+    link: 'https://www.credly.com/badges/b7fb4ba2-97af-4dfe-8de9-10021cbd9078'
+  }
+]
