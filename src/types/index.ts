@@ -3,6 +3,8 @@ export interface Project {
   description: string
   tech: string[]
   highlights: string[]
+  github?: string
+  demo?: string
 }
 
 export interface SkillCategory {

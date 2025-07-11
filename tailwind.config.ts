@@ -52,8 +52,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        'heading': ['var(--font-playfair)', 'serif'],
-        'body': ['var(--font-crimson)', 'serif'],
+        'heading': ['var(--font-fira)', 'monospace'],
+        'body': ['var(--font-jetbrains)', 'monospace'],
       },
       borderRadius: {
         lg: 'var(--radius)',

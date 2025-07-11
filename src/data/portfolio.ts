@@ -104,11 +104,10 @@ export const NAVIGATION_ITEMS = ['about', 'projects', 'skills', 'contact'] as co
 export const PERSONAL_INFO = {
   name: 'Wai Si Hnyun',
   email: 'waisihnyun07@gmail.com',
-  title: 'Innovative Software Engineer & Creative Problem Solver',
-  description: 'Passionate about crafting elegant solutions to complex problems. Specializing in full-stack development with a focus on creating exceptional user experiences.',
+  title: 'Software Engineer & Problem Solver',
+  description: 'Crafting elegant solutions to complex problems. Specializing in full-stack development with focus on exceptional user experiences.',
   aboutText: [
-    'As a Backend-focused Web Developer with over 2 years of experience and AWS Certified Solutions Architect - Associate certification, I specialize in delivering cloud-native solutions that make a real impact. My journey in software development has been driven by a passion for building scalable and efficient systems.',
-    'I have proven expertise in building scalable applications using Java (Spring Boot), PHP (Laravel), and Vue.js. My technical foundation includes deep knowledge of microservices architecture, API design, and managing diverse databases including PostgreSQL, MySQL, and MongoDB. I take pride in deploying robust, high-performance systems on AWS that ensure reliability and scalability.',
-    'Currently, I\'m focused on AI-driven development and vibe coding, exploring how these powerful technologies can accelerate development processes and enhance productivity. I\'m passionate about leveraging cutting-edge tools and methodologies to create more efficient and innovative solutions in this rapidly evolving tech landscape.'
+    'Backend-focused Web Developer with 2+ years of experience and AWS Certified Solutions Architect - Associate. I specialize in building scalable cloud-native applications using Java (Spring Boot), PHP (Laravel), and Vue.js.',
+    'Currently exploring AI-driven development and vibe coding to accelerate development processes and create innovative solutions in the evolving tech landscape.'
   ]
 } as const

@@ -9,12 +9,14 @@ export default function ContactSection() {
   const { formRef, isSubmitting, submitStatus, handleSubmit } = useContactForm()
 
   return (
-    <section id="contact" className="py-20 px-6">
-      <div className="container mx-auto max-w-4xl">
-        <h2 className="font-heading text-3xl font-bold mb-12">Get In Touch</h2>
+    <section id="contact" className="min-h-screen flex items-center py-20 px-6">
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="font-heading text-2xl md:text-3xl font-semibold mb-16 text-center tracking-wide">
+          <span className="text-gray-500">$</span> <span className="text-blue-400">sendMessage</span> <span className="text-gray-500">--connect</span>
+        </h2>
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <p className="font-body text-gray-300 mb-6 leading-relaxed">
+            <p className="font-body text-base md:text-lg text-gray-300 mb-6 leading-loose">
               I'm always interested in hearing about new projects and opportunities.
               Whether you have a question or just want to say hi, feel free to
               drop me a message!

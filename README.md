@@ -10,6 +10,10 @@ A modern, responsive portfolio website built with Next.js, React, Tailwind CSS, 
 - 🎭 Smooth animations and transitions
 - 🧩 Modular and maintainable code structure
 - 🎯 SEO optimized
+- 📄 Strategic resume download placement
+- 🔗 Social media integration
+- 📧 Contact form with EmailJS
+- 🎯 Smooth scrolling navigation
 
 ## Tech Stack
 
@@ -19,6 +23,7 @@ A modern, responsive portfolio website built with Next.js, React, Tailwind CSS, 
 - Shadcn UI
 - Framer Motion
 - Lucide Icons
+- Google Fonts (Inter + Poppins)
 
 ## Getting Started
 
@@ -76,6 +81,20 @@ Modify the skills section in `src/app/page.tsx` to match your expertise:
   skills: ['Skill 1', 'Skill 2'],
 }
 ```
+
+### Resume Download
+
+The resume download feature uses strategic placement for optimal UX:
+
+1. **Header Navigation**: Persistent access across all pages
+2. **Hero Section**: Primary call-to-action for visitors
+
+To update your resume:
+1. Replace `public/files/resume.pdf` with your resume
+2. The filename will be `Wai_Si_Hnyun_Resume.pdf` when downloaded
+3. Update the download filename in the components if needed
+
+**Best Practice**: Keep only 2 download locations to avoid overwhelming users and maintain a clean, professional appearance.
 
 ## Deployment
 
