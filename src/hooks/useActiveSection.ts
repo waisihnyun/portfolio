@@ -5,7 +5,7 @@ export function useActiveSection() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'projects', 'skills', 'contact']
+      const sections = ['home', 'about', 'experience', 'certs', 'projects', 'skills', 'contact']
       const currentSection = sections.find(section => {
         const element = document.getElementById(section)
         if (element) {

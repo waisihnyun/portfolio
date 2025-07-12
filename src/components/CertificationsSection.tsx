@@ -64,8 +64,8 @@ function CertificationCard({ certification, index }: CertificationCardProps) {
 
 export default function CertificationsSection() {
   return (
-    <section id="certs" className="py-20 px-6 bg-gray-900/30">
-      <div className="container mx-auto max-w-4xl">
+    <section id="certs" className="min-h-screen flex items-center py-20 px-6 bg-gray-900/30">
+      <div className="container mx-auto max-w-4xl w-full">
         <motion.h2 
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
